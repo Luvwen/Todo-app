@@ -1,13 +1,148 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fafafa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #1eb4f5;
+}
+
+/* Card component */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  width: 60vw;
+  height: 60vh;
+  background-color: #374b57;
+}
+
+/* Navbar */
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-date {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  line-height: 50px;
+}
+
+.nav-date__date {
+  font-size: 20px;
+}
+
+.nav-date__active {
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+}
+
+/* .nav-tasks {
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 25px;
+  line-height: 50px;
+  height: 70px;
+}
+
+.nav-tasks p {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 35px;
+  margin-top: 10px;
+} */
+
+/* Form */
+
+.wrapper-task {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+.form__input {
+  width: 300px;
+  margin-left: 45px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  line-height: 50px;
+  color: black;
+}
+
+.form__button {
+  width: 75px;
+  background-color: #1eb4f5;
+  margin-left: 10px;
+  border: none;
+  height: 30px;
+  border-radius: 4px;
+}
+
+/* Tasks */
+
+.border {
+  width: 90%;
+  margin: auto;
+}
+
+.task-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.task-container-check {
+  width: 650px;
+  display: flex;
+}
+
+.task-container-check__icon {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.task-container-check__task {
+  margin-left: 15px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.task-container__delete {
+  line-height: 25px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.done {
+  background-color: green;
+  border-radius: 100%;
+}
+
+.checked {
+  color: #1eb4f5;
+}
+
+.pointer {
+  cursor: pointer;
 }
